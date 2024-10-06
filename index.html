@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Tích Chập</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Liên kết tới file CSS -->
+</head>
+<body>
+    <div class="container">
+
+        <h1>Tìm Đầu ra y[n] của hệ thống LTI</h1>
+        <label for="input1">Đáp ứng xung: h[n]= </label>
+        <input type="text" id="input1" placeholder="Ví dụ: 1,2,3" required>
+       
+        <label for="origin1">Vị trí gốc h[n]: </label>
+        <input type="number" id="origin1" value="0" required>
+        <br/>
+        <br/>
+
+        <label for="input2">Đầu vào     x[n]= </label>
+        <input type="text" id="input2" placeholder="Ví dụ: 0,1,0.5" required>
+        
+        <label for="origin2">Vị trí gốc x[n]: </label>
+        <input type="number" id="origin2" value="0" required>
+        <br/>
+        <br/>
+
+        <button onclick="calculateConvolution()">Tính</button>
+        
+        <h2>Kết quả đầu ra y[n]= <span id="result"></span></h2>
+        <p id="numElements"></p> <!-- Số lượng phần tử -->
+        <p id="mean"></p> <!-- Gốc của kết quả -->
+
+        
+        
+        <p id="numElements1"></p> <!-- Số lượng phần tử của mảng h[n] -->
+        <p id="numElements2"></p> <!-- Số lượng phần tử của mảng x[n] -->
+
+
+    </div>
+
+    
+    <pre id="result"></pre>
+    <p id="numElements"></p> <!-- Thêm phần tử để hiển thị số lượng phần tử -->
+    
+    <script src="script.js"></script> <!-- Liên kết tới file JavaScript -->
+    <link rel="stylesheet" href="style.css">
+
+</body>
+</html>
